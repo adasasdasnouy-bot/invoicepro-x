@@ -1,0 +1,22 @@
+{
+  "overview": "InvoicePro X is a dark-themed business tool suite with passcode-protected access, invoice generation with PDF export, POS fee calculator, and profit calculator — all in one focused page.",
+  "features": [
+    "Passcode login (PRO123) to protect access",
+    "Invoice generator with client name, amount, and discount — calculates total",
+    "Download invoice as PDF",
+    "POS fee calculator — 2% transaction fee",
+    "Profit calculator — cost vs. sell price",
+    "Dark navy and green theme"
+  ],
+  "category": "productivity",
+  "tags": [
+    "invoice",
+    "business",
+    "pdf",
+    "calculator",
+    "pos",
+    "profit",
+    "dark-theme"
+  ],
+  "last_updated": "2026-04-13T14:15:42.927Z"
+}

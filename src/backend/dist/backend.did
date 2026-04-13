@@ -1,0 +1,23 @@
+type Timestamp = int;
+type ProfitResult = record {profit: int;};
+type PosResult = 
+ record {
+   fee: nat;
+   total: nat;
+ };
+type InvoiceId = nat;
+type Invoice = 
+ record {
+   amount: nat;
+   client: text;
+   createdAt: Timestamp;
+   discount: nat;
+   id: InvoiceId;
+   total: nat;
+ };
+service : {
+  calcPos: (amount: nat) -> (PosResult) query;
+  calcProfit: (cost: nat, sell: nat) -> (ProfitResult) query;
+  createInvoice: (client: text, amount: nat, discount: nat) -> (Invoice);
+  listInvoices: () -> (vec Invoice) query;
+}

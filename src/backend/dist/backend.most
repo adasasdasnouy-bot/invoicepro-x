@@ -1,0 +1,23 @@
+// Version: 1.0.0
+type InvoiceId__909937669 = Nat;
+type Invoice__785106573 =
+  {
+    amount : Nat;
+    client : Text;
+    createdAt : Timestamp__301639476;
+    discount : Nat;
+    id : InvoiceId__909937669;
+    total : Nat
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type Timestamp__301639476 = Int;
+actor {
+  stable invoices :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Invoice__785106573]];
+      var elementIndex : Nat__490723111
+    };
+  stable var nextInvoiceId : Nat
+};
